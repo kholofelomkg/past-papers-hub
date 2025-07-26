@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <ul>
+        <li><a href="/home/lifescience">Life Science</a></li>
+        <li><a href="/home/mathematics">Mathematics</a></li>
+        <li><a href="/home/accounting">Accounting</a></li>
+        <li><a href="/home/electronics">Electronics</a></li>
+        <li><a href="/home/geography">Geography</a></li>
+        <li><a href="/home/lifeorientation">Life Orientation</a></li>
+        <li><a href="/home/tourism">Tourism</a></li>
+        <li><a href="/home/history">History</a></li>
+        <li><a href="/home/egd">EGD (Engineering Graphics Design)</a></li>
+        <li><a href="/home/cat">CAT (Computer Applications Technology)</a></li>
+        <li><a href="/home/technicalscience">Technical Science</a></li>
+        <li><a href="/home/technicalmath">Technical Mathematics</a></li>
+        <li><a href="/home/economics">Economics</a></li>
+
+    </ul>
+{% endblock %}

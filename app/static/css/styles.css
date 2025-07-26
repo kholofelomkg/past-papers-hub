@@ -1,0 +1,47 @@
+body {
+  text-align: center;
+  background: linear-gradient(to bottom,#3b95bb, #ffffff);
+  font-family:  Helvetica;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+ul {
+  list-style: none; /* remove default bullets */
+  padding: 0;
+}
+
+ul li {
+  background: #eee;
+  border: 1px solid #ccc;
+  padding: 10px 10px 10px 50px; /* leave space on left for image */
+  margin-bottom: 10px;
+  position: relative;
+  border-radius: 8px;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  /* background image on left */
+  background-image: url('../images/icon.png');
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 30px 30px;
+}
+ul li:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+
+ul li:nth-child(even) {
+  background-color: #d0d0d0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+ul li:hover {
+  background-color: #566163;
+}
+
+
+
+

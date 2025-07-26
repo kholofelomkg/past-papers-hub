@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <h2>Physical Science</h2>
+    <ul>
+        {% if items %}
+        {% for item in items %}
+        <a href="{{ url_for('static', filename='papers/Physical Science/' + item) }}"><li>{{ item }}</li></a>
+        {% endfor %}
+        {% else %}
+        <h1>No papers available</h1>
+        {% endif %}
+    </ul>
+{% endblock %}
