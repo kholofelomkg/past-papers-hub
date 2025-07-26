@@ -107,8 +107,8 @@ def economics():
     return render_template('Economics.html',items=files)
 
 @app.route('/home/electronics')
-def electrics():
-    directory_path = os.path.join(os.getcwd(),"app","static", "papers", "electrics")
+def electronics():
+    directory_path = os.path.join(os.getcwd(),"app","static", "papers", "electronics")
     contents = os.listdir(directory_path)
     files = [item for item in contents if os.path.isfile(os.path.join(directory_path, item))]
     return render_template('Electrics.html',items=files)
