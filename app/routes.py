@@ -101,7 +101,7 @@ def egd():
 
 @app.route('/home/economics')
 def economics():
-    directory_path = os.path.join(os.getcwd(),"app","static", "papers", "eeconomics")
+    directory_path = os.path.join(os.getcwd(),"app","static", "papers", "economics")
     contents = os.listdir(directory_path)
     files = [item for item in contents if os.path.isfile(os.path.join(directory_path, item))]
     return render_template('economics.html',items=files)
