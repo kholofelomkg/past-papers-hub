@@ -2,11 +2,11 @@
 
 {% block content %}
 <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-    <h2>Economics</h2>
+    <h2>CAT</h2>
     <ul>
         {% if items %}
         {% for item in items %}
-        <a href="{{ url_for('static', filename='papers/Economics/' + item) }}"><li>{{ item }}</li></a>
+        <a href="{{ url_for('static', filename='papers/cat/' + item) }}"><li>{{ item }}</li></a>
         {% endfor %}
         {% else %}
         <h1>No papers available</h1>

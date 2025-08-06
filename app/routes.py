@@ -9,106 +9,106 @@ def index():
 
 @app.route('/home/lifescience')
 def lifescience():
-    directory_path = os.path.join(os.getcwd(),"app","static", "papers", "Life Science")
+    directory_path = os.path.join(os.getcwd(),"app","static", "papers", "lifescience")
     contents = os.listdir(directory_path)
     files = [item for item in contents if os.path.isfile(os.path.join(directory_path, item))]
     return render_template('lifescience.html',items=files)
 
 @app.route('/home/mathematics')
 def mathematics():
-    directory_path = os.path.join(os.getcwd(),"app","static", "papers", "Mathematics")
+    directory_path = os.path.join(os.getcwd(),"app","static", "papers", "mathematics")
     contents = os.listdir(directory_path)
     files = [item for item in contents if os.path.isfile(os.path.join(directory_path, item))]
     return render_template('mathematics.html',items=files)
 
 @app.route('/home/geography')
 def geography():
-    directory_path = os.path.join(os.getcwd(),"app","static", "papers", "Geography")
+    directory_path = os.path.join(os.getcwd(),"app","static", "papers", "geography")
     contents = os.listdir(directory_path)
     files = [item for item in contents if os.path.isfile(os.path.join(directory_path, item))]
-    return render_template('Geography.html',items=files)
+    return render_template('geography.html',items=files)
 
 @app.route('/home/accounting')
 def accounting():
-    directory_path = os.path.join(os.getcwd(),"app","static", "papers", "Accounting")
+    directory_path = os.path.join(os.getcwd(),"app","static", "papers", "accounting")
     contents = os.listdir(directory_path)
     files = [item for item in contents if os.path.isfile(os.path.join(directory_path, item))]
-    return render_template('Accounting.html',items=files)
+    return render_template('accounting.html',items=files)
 
 @app.route('/home/cat')
 def cat():
-    directory_path = os.path.join(os.getcwd(),"app","static", "papers", "CAT")
+    directory_path = os.path.join(os.getcwd(),"app","static", "papers", "cat")
     contents = os.listdir(directory_path)
     files = [item for item in contents if os.path.isfile(os.path.join(directory_path, item))]
-    return render_template('CAT.html',items=files)
+    return render_template('cat.html',items=files)
 
 @app.route('/home/physicalscience')
 def physicalscience():
-    directory_path = os.path.join(os.getcwd(),"app","static", "papers", "Physical Science")
+    directory_path = os.path.join(os.getcwd(),"app","static", "papers", "physicalscience")
     contents = os.listdir(directory_path)
     files = [item for item in contents if os.path.isfile(os.path.join(directory_path, item))]
-    return render_template('Physical Science.html',items=files)
+    return render_template('physicalscience.html',items=files)
 
 @app.route('/home/history')
 def history():
-    directory_path = os.path.join(os.getcwd(),"app","static", "papers", "History")
+    directory_path = os.path.join(os.getcwd(),"app","static", "papers", "history")
     contents = os.listdir(directory_path)
     files = [item for item in contents if os.path.isfile(os.path.join(directory_path, item))]
-    return render_template('History.html',items=files)
+    return render_template('history.html',items=files)
 
 @app.route('/home/mathematicalliteracy')
 def mathematicalliteracy():
-    directory_path = os.path.join(os.getcwd(),"app","static", "papers", "Mathematical Literacy")
+    directory_path = os.path.join(os.getcwd(),"app","static", "papers", "mathematicalliteracy")
     contents = os.listdir(directory_path)
     files = [item for item in contents if os.path.isfile(os.path.join(directory_path, item))]
-    return render_template('MathematicalLiteracy.html',items=files)
+    return render_template('mathematicalliteracy.html',items=files)
 
 
 @app.route('/home/technicalmath')
 def technicalmath():
-    directory_path = os.path.join(os.getcwd(),"app","static", "papers", "Technical Math")
+    directory_path = os.path.join(os.getcwd(),"app","static", "papers", "technicalmath")
     contents = os.listdir(directory_path)
     files = [item for item in contents if os.path.isfile(os.path.join(directory_path, item))]
-    return render_template('Technical Math.html',items=files)
+    return render_template('technicalmath.html',items=files)
 
 @app.route('/home/technicalscience')
 def technicalscience():
-    directory_path = os.path.join(os.getcwd(),"app","static", "papers", "Technical Science")
+    directory_path = os.path.join(os.getcwd(),"app","static", "papers", "technicalscience")
     contents = os.listdir(directory_path)
     files = [item for item in contents if os.path.isfile(os.path.join(directory_path, item))]
-    return render_template('Technical Science.html',items=files)
+    return render_template('technicalscience.html',items=files)
 
 @app.route('/home/tourism')
 def tourism():
-    directory_path = os.path.join(os.getcwd(),"app","static", "papers", "Tourism")
+    directory_path = os.path.join(os.getcwd(),"app","static", "papers", "tourism")
     contents = os.listdir(directory_path)
     files = [item for item in contents if os.path.isfile(os.path.join(directory_path, item))]
-    return render_template('Tourism.html',items=files)
+    return render_template('tourism.html',items=files)
 
 @app.route('/home/lifeorientation')
 def lifeorientation():
-    directory_path = os.path.join(os.getcwd(),"app","static", "papers", "Life Orientation")
+    directory_path = os.path.join(os.getcwd(),"app","static", "papers", "lifeorientation")
     contents = os.listdir(directory_path)
     files = [item for item in contents if os.path.isfile(os.path.join(directory_path, item))]
-    return render_template('Life Orientation.html',items=files)
+    return render_template('lifeorientation.html',items=files)
 
 @app.route('/home/egd')
 def egd():
-    directory_path = os.path.join(os.getcwd(),"app","static", "papers", "EGD")
+    directory_path = os.path.join(os.getcwd(),"app","static", "papers", "egd")
     contents = os.listdir(directory_path)
     files = [item for item in contents if os.path.isfile(os.path.join(directory_path, item))]
-    return render_template('EGD.html',items=files)
+    return render_template('egd.html',items=files)
 
 @app.route('/home/economics')
 def economics():
-    directory_path = os.path.join(os.getcwd(),"app","static", "papers", "Economics")
+    directory_path = os.path.join(os.getcwd(),"app","static", "papers", "eeconomics")
     contents = os.listdir(directory_path)
     files = [item for item in contents if os.path.isfile(os.path.join(directory_path, item))]
-    return render_template('Economics.html',items=files)
+    return render_template('economics.html',items=files)
 
 @app.route('/home/electronics')
-def electrics():
-    directory_path = os.path.join(os.getcwd(),"app","static", "papers", "electrics")
+def electronics():
+    directory_path = os.path.join(os.getcwd(),"app","static", "papers", "electronics")
     contents = os.listdir(directory_path)
     files = [item for item in contents if os.path.isfile(os.path.join(directory_path, item))]
-    return render_template('Electrics.html',items=files)
+    return render_template('electronics.html',items=files)

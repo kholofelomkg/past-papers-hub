@@ -6,7 +6,7 @@
     <ul>
         {% if items %}
         {% for item in items %}
-        <a href="{{ url_for('static', filename='papers/Mathematics/' + item) }}"><li>{{ item }}</li></a>
+        <a href="{{ url_for('static', filename='papers/mathematics/' + item) }}"><li>{{ item }}</li></a>
         {% endfor %}
         {% else %}
         <h1>No papers available</h1>
